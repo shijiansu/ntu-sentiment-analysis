@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Service -->
+	<bean id="sentimentAnalysisService"
+		class="_2_data_sentiment_process.sentiment.alchemyapi.SentimentAnalysisServiceImpl" />
+
+	<bean id="dataTransformService" class="ci.service.DataTransformServiceImpl" />
+
+	<!-- DAO -->
+	<bean id="collectionCommentsDao" class="ci.dao.CollectionCommentsDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="collectionPostDao" class="ci.dao.CollectionPostDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="processPostDao" class="ci.dao.ProcessPostDaoImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- database configuration -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/ntu-msis-ci-facebook_mining" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>
+</beans>

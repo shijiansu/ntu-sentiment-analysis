@@ -1,0 +1,47 @@
+
+1. Test of Normality (figure 4-8, table 11)
+data source: view_engagement
+Analyze -> Descriptive Statistics -> Explore
+Dependent List = engagement
+Factor List = facebook_group
+Plots 
+-> un-select: Stem-and-leaf
+-> select: Histogram
+-> select: Normality plots with tests (important)
+>> Result is not Normality
+
+2. Correlate like, share, comment, comment like with engagement (table 12)
+data source: view_engagement
+Analyze -> Correlate -> Bivariate
+Variables = engagement, count_of_like, count_of_comment, count_of_share, count_of_comment_like
+un-select: Pearson (this is only for Normality)
+select: Spearman
+
+3. Correlate like, share, comment, comment like with engagement (table 13-17)
+data source: view_engagement_1 ~ view_engagement_5 
+Analyze -> Correlate -> Distances
+Variables = engagement, count_of_like, count_of_comment, count_of_share, count_of_comment_like
+select: Between variables
+select: Dissimilarities
+select Measures: Euclidean distance
+
+4. Correlate engagement, like with count of word, is_pic (table 18)
+data source: view_post_all_factors_1 ~ view_post_all_factors_5
+Analyze -> Correlate -> Bivariate
+Variables = engagement, count_of_word, is_pic
+un-select: Pearson (this is only for Normality)
+select: Spearman
+
+5. Correlate engagement, like with sentiment score (table 19)
+data source: view_post_all_factors_1 ~ view_post_all_factors_5
+Analyze -> Correlate -> Bivariate
+Variables = engagement, sentiment_score, count_of_positive_comment, count_of_negative_comment, count_of_neutral_comment
+un-select: Pearson (this is only for Normality)
+select: Spearman
+
+6. Correlate engagement, like with sentiment score (table 20)
+data source: view_post_all_factors_1 ~ view_post_all_factors_5
+Analyze -> Correlate -> Bivariate
+Variables = engagement, is_positive_post, is_negative_post, is_neutral_post
+un-select: Pearson (this is only for Normality)
+select: Spearman

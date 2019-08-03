@@ -1,0 +1,21 @@
+
+1. Overall of cross table (table 6, table 7)
+data source: view_post_all_factors
+－
+Analyze -> Descriptive Statistics -> Crosstabs
+Row = facebook_name, country
+Column = post_published_year
+
+2. Overall of diagram (figure 2)
+data source: view_post_all_factors
+Graphs -> Legacy Dialogs -> Bar -> Clustered
+select N of cases
+Category Axis = facebook_name
+Define Clusters by = post_published_year
+
+3. Overall of diagram (figure 3)
+data source: view_post_all_factors
+Graphs -> Legacy Dialogs -> Bar -> Clustered
+select N of cases
+Category Axis = country
+Define Clusters by = post_published_year
