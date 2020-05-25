@@ -10,8 +10,6 @@
 ![](https://img.shields.io/github/repo-size/shijiansu/ntu-sentiment-analysis)
 ![](https://img.shields.io/github/last-commit/shijiansu/ntu-sentiment-analysis?color=red)
 
-![](https://github.com/shijiansu/ntu-sentiment-analysis/workflows/ci%20build/badge.svg)
-
 --------------------------------------------------------------------------------
 
 # Database
