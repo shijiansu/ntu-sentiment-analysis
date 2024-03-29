@@ -1,16 +1,4 @@
-![](https://img.shields.io/badge/language-java-blue)
-![](https://img.shields.io/badge/technology-facebook%20comments,@20sentiment%20analysis-blue)
 ![](https://img.shields.io/badge/development%20year-2014-orange)
-![](https://img.shields.io/badge/contributor-shijian%20su-purple)
-![](https://img.shields.io/badge/license-MIT-lightgrey)
-
-![](https://img.shields.io/github/languages/top/shijiansu/ntu-sentiment-analysis)
-![](https://img.shields.io/github/languages/count/shijiansu/ntu-sentiment-analysis)
-![](https://img.shields.io/github/languages/code-size/shijiansu/ntu-sentiment-analysis)
-![](https://img.shields.io/github/repo-size/shijiansu/ntu-sentiment-analysis)
-![](https://img.shields.io/github/last-commit/shijiansu/ntu-sentiment-analysis?color=red)
-
---------------------------------------------------------------------------------
 
 # Database
 
